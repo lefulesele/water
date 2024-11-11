@@ -1,0 +1,72 @@
+/*style.css*/
+body{
+    font-family:Arial,sans-serif;
+    background-color:#a52a2a;
+    margin:0;
+    padding:0;
+}
+header{
+    background-color:#333;
+    color:#f0ffff;
+    padding:20px;
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+}
+nav ul li{
+    display:inline;
+    padding:10px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:color 0.3s;
+}
+nav ul li a:hover{
+    color:#ddd;
+}
+main {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:20px;
+}
+section{
+    border:1px solid #333;
+    padding:20px;
+}
+.carsousel{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,mimmax(200px));
+    gap:10px;
+}
+.carousel figure{
+    position:relative;
+    overflow:hidden;
+}
+.carousel img{
+    width:100%;
+    height:auto;
+}
+.carousel figcaption{
+    position:abolute;
+    bottom:10px;
+    left:10px;
+    background-color:rgba(0,0,0,0.7);
+    color:#ddd;
+    padding:5px;
+    transition:transform 0.3s;
+}
+.carousel figcaption:hover{
+    transform:translateY(-10px);
+}
+footer{
+    background-color:#333;
+    color:#f0f8ff;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
